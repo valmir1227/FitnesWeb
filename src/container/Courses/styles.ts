@@ -1,30 +1,27 @@
 import styled from "styled-components";
 import { device } from "../../../styles/devices";
+import coursesBg from "../../assets/course_bg.png";
 
 export const Container = styled.section`
   width: 100vw;
   height: auto;
-  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F8F8F9;
+  background-image: url(${coursesBg.src});
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  p {
-    text-align: center;
-    color: #616783;
-    margin: 2rem;
+  h1 {
+    font-size: 2.4rem;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
   }
-
-  a {
-    margin-top: 2rem;
-  }
-
-  
 
   @media ${device.mobileS} {
-    padding: 1rem;
+    padding: 6rem 1rem;
   }
 `;
 

@@ -13,7 +13,7 @@ const Container = styled.section`
   .banner {
     width: 35rem;
     height: 36rem;
-
+    margin-left: 6rem;
     left: 0;
     bottom: 0;
 
@@ -84,7 +84,7 @@ const Container = styled.section`
 
     div {
       width: 40rem;
-      padding: 0 3rem;
+      margin-right: 6rem;
       left: 0;
     }
   }
