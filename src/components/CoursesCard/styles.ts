@@ -2,30 +2,15 @@ import styled from "styled-components";
 import { device } from "../../../styles/devices";
 
 export const Container = styled.div`
-  width: 25%;
-  height: 18rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  text-align: center;
-  background: #fff;
+  background: var(--white);
 
-  &:hover {
-    background: rgb(232, 120, 155);
-    background: linear-gradient(
-      180deg,
-      rgba(232, 120, 155, 1) 36%,
-      rgba(147, 88, 248, 1) 100%
-    );
-
-    h2 {
-      color: #fff;
-    }
-    p {
-      color: #fff;
-    }
+  .image {
+    width: 40%;
+    height: 243px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
   }
 
   @media ${device.mobileS} {
@@ -37,17 +22,36 @@ export const Container = styled.div`
   }
 
   @media ${device.laptop} {
-    width: 25%;
+    width: 30%;
   }
 `;
 
 export const Text = styled.div`
-  text-align: center;
+  text-align: left;
+  margin: 0 2rem;
   h2 {
-    color: #322b40;
+    color: var(--dark-gray);
   }
 
   p {
-    margin: 1rem 1rem 0;
+    color: var(--grey);
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-style: italic;
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    letter-spacing: -1px;
+
+    &:hover {
+      svg {
+        transform: scale(1.2);
+      }
+    }
   }
 `;

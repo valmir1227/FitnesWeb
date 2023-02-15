@@ -47,6 +47,15 @@ export const Mobile = styled.header`
   justify-content: space-between;
   padding: 2rem 1rem;
   position: absolute;
+  h1 {
+    display: flex;
+    font-size: 2rem;
+    gap: 5px;
+    color: var(--orange);
+    span {
+      color: var(--white);
+    }
+  }
 
   div {
     display: flex;
@@ -54,7 +63,7 @@ export const Mobile = styled.header`
     align-items: flex-end;
     nav {
       list-style: none;
-      background: rgba(146, 88, 249, 0.38);
+      background: var(--orange);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(5px);
       border: 1px solid rgba(146, 88, 249, 1);

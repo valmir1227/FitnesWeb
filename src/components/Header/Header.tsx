@@ -34,7 +34,9 @@ export default function Header() {
         </Head>
       ) : (
         <Mobile>
-          <Image src={Logo} alt="" />
+          <h1>
+            GYM <span>FIT</span>
+          </h1>
           <div>
             {toggleMenu && (
               <nav>

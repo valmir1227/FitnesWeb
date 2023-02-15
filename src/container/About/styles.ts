@@ -29,8 +29,6 @@ export const AboutContainer = styled.section`
 
 export const Text = styled.div`
   h1 {
-    width: fit-content;
-    position: relative;
     font-size: 2.4rem;
     color: var(--dark-gray);
   }
