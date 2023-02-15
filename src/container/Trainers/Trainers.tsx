@@ -39,13 +39,7 @@ export default function Trainers({ trainers }: TrainersProps) {
   return (
     <Container>
       <div>
-        <Title textPrimary="Our" textSecondary="Traienrs" />
-        <p>
-          Quisque ullamcorper ex non leo blandit porta. Duis purus sapien,
-          blandit non sem quis,
-          <br />
-          mollis vehicula sapien.
-        </p>
+        <h1>OUR TRAINERS</h1>
       </div>
 
       <Cards>
@@ -53,7 +47,7 @@ export default function Trainers({ trainers }: TrainersProps) {
           slidesPerView={1}
           spaceBetween={10}
           autoplay={{
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           pagination={{

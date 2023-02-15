@@ -6,10 +6,11 @@ export const Container = styled.section`
   div {
     text-align: center;
     margin-bottom: 1rem;
-
-    p {
-      color: #616797;
-    }
+    h1 {
+      font-size: 2.4rem;
+      color: var(--dark-gray);
+      margin-top: 4rem;
+    } 
   }
 
   @media ${device.mobileS} {
