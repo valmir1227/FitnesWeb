@@ -2,79 +2,69 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 28rem;
-  border-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background: #fff;
   cursor: pointer;
   transition: all 0.3s;
-  box-shadow: 0px 0px 18px -1px rgba(151, 87, 246, 0.6);
-
 
   &:hover {
-    box-shadow: 0px 0px 18px -1px rgba(151, 87, 246, 0.8);
+    border-bottom: 2px solid var(--orange);
 
     div img {
-      filter: grayscale(1);
+      filter: grayscale(0);
     }
 
     h3 {
-      color: #d84dc7;
+      color: var(--orange);
     }
   }
 
   div {
     width: 100%;
-    height: 20rem;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    padding-bottom: 2rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 
     img {
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
       width: 100%;
-      height: 100%;
+      height: 20rem;
+
       object-fit: cover;
+      filter: grayscale(1);
     }
   }
 `;
 
 export const Text = styled.div`
-  text-align: center;
-  margin-top: 2rem;
+  text-align: left;
   padding: 0 1rem 1rem;
 
   span {
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
-    color: #616783;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    font-size: 0.9rem;
+    padding: 2rem 1rem;
+    background: var(--orange);
+    color: var(--white);
+    font-weight: 500;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   }
 
   h3 {
     font-weight: 500;
     letter-spacing: -0.5px;
     font-size: 1.2rem;
-    color: #8e56fd;
-    margin: 1rem 0;
+    color: var(--dark-gray);
   }
 
   p {
     font-size: 0.9rem;
-    color: #616783;
-  }
-
-  a {
-    margin: 1rem 0 2rem;
-    color: #d84dc7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    letter-spacing: -0.5px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: opacity 0.3s;
-
-    &:hover {
-      opacity: 0.7;
-    }
+    color: var(--grey);
+    margin-top: 1rem;
   }
 `;

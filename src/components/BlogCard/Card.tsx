@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MdKeyboardArrowRight } from "react-icons/md";
-
+import { dateFormatter } from "utils/dateFormater";
 import { Container, Text } from "./styles";
-
 interface CardProps {
   image: string;
-  publishDate: string;
+  publishDate: Date;
   title: string;
   content: string;
 }
@@ -25,15 +23,9 @@ export default function Card({
         </div>
 
         <Text>
-          <span>{publishDate}</span>
+          <span>{dateFormatter.format(publishDate)}</span>
           <h3>{title}</h3>
           <p>{content}</p>
-          <Link href="/blog" passHref legacyBehavior>
-            <a>
-              Read More
-              <MdKeyboardArrowRight size="25px" />
-            </a>
-          </Link>
         </Text>
       </Link>
     </Container>

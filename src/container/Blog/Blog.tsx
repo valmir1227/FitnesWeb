@@ -11,7 +11,7 @@ interface Article {
     title: {
       text: string;
     }[];
-    firstPublicationDate: string;
+    firstPublicationDate: Date;
     image: {
       url: string;
     };
@@ -29,7 +29,7 @@ export default function Blog({ articles }: BlogProps) {
   const getExcerpt = (text: { excerpt: { text: string }[] }): string => {
     if (!text || !Array.isArray(text.excerpt) || !text.excerpt[0]?.text)
       return "";
-    let finalExcerpt = text.excerpt[0].text.slice(0, 250);
+    let finalExcerpt = text.excerpt[0].text.slice(0, 90);
     if (finalExcerpt.length < text.excerpt[0].text.length) {
       let lastSpace = finalExcerpt.lastIndexOf(" ");
       finalExcerpt = finalExcerpt.slice(0, lastSpace) + "...";
