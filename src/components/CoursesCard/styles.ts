@@ -6,11 +6,19 @@ export const Container = styled.div`
   align-items: center;
   background: var(--white);
 
+  &:hover {
+    .image {
+      filter: grayscale(0);
+    }
+  }
+
   .image {
     width: 40%;
     height: 243px;
     -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    transition: all 0.3s;
+    filter: grayscale(1);
   }
 
   @media ${device.mobileS} {

@@ -40,7 +40,7 @@ export default function Trainers({ trainers }: TrainersProps) {
     <Container>
       <div>
         <h1>OUR TRAINERS</h1>
-      </div>
+      </div> 
 
       <Cards>
         <Swiper

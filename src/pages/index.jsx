@@ -18,7 +18,6 @@ export default function Index({ trainers, articles }) {
       <About />
       <Courses />
       <Trainers trainers={trainers} />
-      <Timetable />
       <Explore />
       <Blog articles={articles} />
     </>

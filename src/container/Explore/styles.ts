@@ -1,19 +1,13 @@
 import styled from "styled-components";
-import VideoBg from "../../assets/video.svg";
+import VideoBg from "../../assets/video_bg.png";
 
 export const Container = styled.section`
-  background: rgb(232, 120, 155);
-  background: linear-gradient(
-      -90deg,
-      rgba(232, 120, 155, 0.8) 50%,
-      rgba(147, 88, 248, 0.8) 70%
-    ),
-    url(${VideoBg?.src});
-
-  width: 100vw;
-  height: 25rem;
-  background-size: cover;
+  background: url(${VideoBg?.src});
+  background-attachment: fixed;
   background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 35rem;
 
   display: flex;
   justify-content: center;
@@ -23,31 +17,28 @@ export const Container = styled.section`
     text-align: center;
 
     h1 {
-      font-size: 2.1rem;
+      font-size: 2rem;
       text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 0.5px;
+      letter-spacing: -2x;
     }
-    svg {
+    img {
       cursor: pointer;
       margin: 1rem 0;
-      color: #fff;
-      background: rgba(230, 230, 230, 0.4);
-      border-radius: 100%;
 
       transition: all 0.3s;
 
       &:hover {
-        transform: scale(1.1);
-        background: transparent;
+        filter: brightness(0.95);
       }
     }
 
     p {
+      font-size: 2rem;
       text-transform: uppercase;
-      font-size: 1.3rem;
-      letter-spacing: 1px;
-      font-weight: 500;
+      letter-spacing: -2px;
+      font-weight: 700;
+      color: var(--orange);
+      margin-top: 1rem;
     }
   }
 `;

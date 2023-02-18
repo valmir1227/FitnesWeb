@@ -39,13 +39,7 @@ export default function Blog({ articles }: BlogProps) {
   return (
     <Container>
       <Text>
-        <Title textPrimary="Our" textSecondary="Blog" />
-        <p>
-          Quisque ullamcorper ex non leo blandit porta. Duis purus sapien,
-          blandit non sem quis,
-          <br />
-          mollis vehicula sapien.
-        </p>
+        <h1>OUR BLOG</h1>
       </Text>
       <Cards>
         <Swiper

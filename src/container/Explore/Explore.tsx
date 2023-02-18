@@ -1,16 +1,15 @@
 import { useState } from "react";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
-import { AiFillPlayCircle } from "react-icons/ai";
+import play from "../../assets/play.png";
 import { Container } from "./styles";
+import Image from "next/image";
 
 export default function Explore() {
   const [isOpen, setOpen] = useState(false);
   return (
     <Container>
       <div>
-        <h1>Explore GymFit</h1>
-
         <>
           <ModalVideo
             channel="youtube"
@@ -20,9 +19,9 @@ export default function Explore() {
             onClose={() => setOpen(false)}
           />
 
-          <AiFillPlayCircle size="100px" onClick={() => setOpen(true)} />
+          <Image src={play} alt="play button" onClick={() => setOpen(true)} />
         </>
-
+        <h1>EXPLORE FITNESS COMPLEX</h1>
         <p>Watch Now</p>
       </div>
     </Container>

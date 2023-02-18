@@ -14,12 +14,8 @@ export default function Timetable() {
   return (
     <Container className="timatable-container">
       <Text>
-        <Title textPrimary="Our" textSecondary="Timetable" />
-        <p>
-          Quisque ullamcorper ex non leo blandit porta. Duis purus sapien,
-          blandit non sem quis, <br />
-          mollis vehicula sapien.
-        </p>
+        <h1>OUR TIMETABLE</h1>
+      
       </Text>
 
       <CardConTainer>

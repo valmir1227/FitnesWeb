@@ -21,7 +21,12 @@ export const Container = styled.section`
 
 export const Text = styled.div`
   text-align: center;
-  color: #616797;
+
+  h1 {
+    font-size: 2.4rem;
+    color: var(--dark-gray);
+    margin-top: 4rem;
+  }
 `;
 
 export const CardConTainer = styled.div`
