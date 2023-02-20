@@ -1,45 +1,57 @@
 import Link from "next/link";
-import Title from "components/Title/Title";
 import Image from "next/image";
 import {
   Contact,
   Container,
-  Form,
+  Instagram,
+  Links,
   Logo,
-  NavContainer,
   SciContainer,
 } from "./styles";
-import { MdEmail, MdPhone } from "react-icons/md";
-import PaperPlane from "../../assets/paper-plane.png";
-import FooterLogo from "../../assets/footer-logo.png";
 
 import FacebookLogo from "../../assets/facebook.png";
 import InstagramLogo from "../../assets/instagram.png";
 import GithubLogo from "../../assets/github.png";
+import Galerri2 from "../../assets/gallery_2.png";
+import { BsTelephoneFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
+import { IoLocationSharp } from "react-icons/io5";
 
 export default function Footer() {
   return (
     <Container>
-      <Form>
-        <Title textPrimary="SUBSCRIBE TO " textSecondary="OUR NEWSLETTER" />
-        <div>
-          <input type="email" placeholder="Your Email..." />
+      <Logo>
+        <h1>
+          GYM <span>FIT</span>
+        </h1>
+
+        <p>
+          ligula sed porta cursus, lectus ligula interdum tortor, vitae tempor
+          leo eros lobortis ante. Integer semper, metus in tincidunt euismod.
+        </p>
+        <SciContainer>
           <div>
-            <Link href="/contact">
-              <Image src={PaperPlane} alt="" />
+            <Link
+              href="https://www.instagram.com/valmiralmeidadev/"
+              target="_blank"
+            >
+              <Image src={InstagramLogo} alt="" />
+            </Link>
+            <Link
+              href="https://www.facebook.com/valmir.almeida.5454/"
+              target="_blank"
+            >
+              <Image src={FacebookLogo} alt="" />
+            </Link>
+            <Link href="https://github.com/valmir1227" target="_blank">
+              <Image src={GithubLogo} alt="" />
             </Link>
           </div>
-        </div>
-        <p>Get latest updates for latest courses</p>
-      </Form>
-      <Logo>
-        <Image src={FooterLogo} alt="" />
+        </SciContainer>
       </Logo>
 
-      <NavContainer>
-        <p>
-          <hr />
-        </p>
+      <Links>
+        <h3>Links</h3>
         <nav>
           <Link href="/">
             <li>Home</li>
@@ -58,52 +70,42 @@ export default function Footer() {
             <li>Blog</li>
           </Link>
         </nav>
-        <p>
-          <hr />
-        </p>
-      </NavContainer>
+      </Links>
+
+      <Instagram>
+        <h3>Instagram</h3>
+        <div className="grid-container">
+          <Image src={Galerri2} alt="" />
+          <Image src={Galerri2} alt="" />
+          <Image src={Galerri2} alt="" />
+          <Image src={Galerri2} alt="" />
+          <Image src={Galerri2} alt="" />
+          <Image src={Galerri2} alt="" />
+          <Image src={Galerri2} alt="" />
+          <Image src={Galerri2} alt="" />
+          <Image src={Galerri2} alt="" />
+        </div>
+      </Instagram>
 
       <Contact>
+        <h3>CONTACT US</h3>
         <p>
-          Aliquam scelerisque mauris at quam sollicitudin, euismod posuere neque
-          dapibus. Duis sed eleifend urna, vel viverra mi. Vestibulum aliquet
-          mauris id urna laoreet, a convallis lectus viverra. Fusce finibus nec
-          turpis at viverra. Ut eget ex in libero condimentum semper sit amet
-          quis odio. Morbi ut elit ac lorem hendrerit tempus quis eu dui.
+          <BsTelephoneFill color="#EF6C09" size="16px" />{" "}
+          <a href="tell">(33) 99111-3641</a>
         </p>
-
-        <div>
-          <a href="tel:+5533991113641">
-            <MdPhone color="#fff" size="30px" />
-            (33) 9 9111-3641
+        <p>
+          <MdEmail color="#EF6C09" size="16px" />{" "}
+          <a href="mailto:almeidavalmir76@gmail.com">
+            almeidavalmir76@gmail.com
           </a>
-          <a href="mailto:almeidavalmir76@gmail.com?subject=GymFit">
-            <MdEmail color="#fff" size="30px" />
-            Fitness@yourdomain.com
+        </p>
+        <p>
+          <IoLocationSharp color="#EF6C09" size="16px" />{" "}
+          <a>
+            1011Santa Monica <br /> <br /> boulevard Los Angeles
           </a>
-        </div>
+        </p>
       </Contact>
-      <hr />
-      <SciContainer>
-        <p>&copy; 2022 ValmirAlmeidaDev</p>
-        <div>
-          <Link
-            href="https://www.instagram.com/valmiralmeidadev/"
-            target="_blank"
-          >
-            <Image src={InstagramLogo} alt="" />
-          </Link>
-          <Link
-            href="https://www.facebook.com/valmir.almeida.5454/"
-            target="_blank"
-          >
-            <Image src={FacebookLogo} alt="" />
-          </Link>
-          <Link href="https://github.com/valmir1227" target="_blank">
-            <Image src={GithubLogo} alt="" />
-          </Link>
-        </div>
-      </SciContainer>
     </Container>
   );
 }
