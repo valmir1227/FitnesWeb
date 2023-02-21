@@ -11,7 +11,7 @@ const Container = styled.section`
   background-repeat: no-repeat;
 
   .banner {
-    width: 35rem;
+    width: 33rem;
     height: 36rem;
     margin-left: 6rem;
     left: 0;
@@ -20,6 +20,7 @@ const Container = styled.section`
     img {
       width: 100%;
       height: 100%;
+      filter: grayscale(6);
     }
   }
 

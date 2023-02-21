@@ -84,8 +84,8 @@ export const ImageContainer = styled.div`
   }
 
   @media ${device.laptop} {
-    width: 24rem;
-    height: 24rem;
+    width: 30em;
+    height: 30rem;
     margin-left: 4rem;
   }
 

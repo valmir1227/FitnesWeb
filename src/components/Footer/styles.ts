@@ -1,29 +1,26 @@
 import styled from "styled-components";
-import FooterBg from "../../assets/footer-bg.png";
 import { device } from "../../../styles/devices";
 
 export const Container = styled.footer`
   width: 100%;
-  background: #eeeeec;
+  background: #f0edee;
   display: flex;
   justify-content: space-evenly;
-  padding: 0 7rem;
+  align-items: flex-start;
 
   @media ${device.mobileS} {
-    padding: 4rem 1rem;
-    margin-top: 4rem;
+    padding: 5rem 1rem;
   }
   @media ${device.tablet} {
-    padding: 4rem 3rem;
+    padding: 5rem 3rem;
   }
   @media ${device.laptop} {
-    padding: 4rem 7rem;
+    padding: 5rem 7rem;
   }
 `;
 
 export const Logo = styled.div`
-  width: 300px;
-  margin-top: 2rem;
+  width: 20rem;
   line-height: 2rem;
 
   h1 {
@@ -44,12 +41,12 @@ export const Logo = styled.div`
 `;
 
 export const Links = styled.div`
-  margin-top: 1rem;
   h3 {
     color: var(--dark-gray);
     text-transform: uppercase;
     letter-spacing: -1px;
     margin-bottom: 2rem;
+    font-size: 0.9rem;
   }
 
   nav {
@@ -92,14 +89,15 @@ export const SciContainer = styled.div`
 `;
 
 export const Instagram = styled.div`
-  width: 250px;
-  height: 250px;
+  width: 16.6rem;
+  height: 16.6rem;
 
   h3 {
     color: var(--dark-gray);
     text-transform: uppercase;
     letter-spacing: -1px;
     margin-bottom: 2rem;
+    font-size: 0.9rem;
   }
 
   .grid-container {

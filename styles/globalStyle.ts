@@ -42,12 +42,7 @@ button {
   body {
   color: #FFF;
   overflow-x: hidden;
-  ::-webkit-scrollbar {
-     width: 10px;
-} 
-::-webkit-scrollbar-thumb {   
-background-color: var(--orange);   
-}
+  
   }
   
   ul {

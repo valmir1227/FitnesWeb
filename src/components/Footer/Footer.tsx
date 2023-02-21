@@ -12,7 +12,13 @@ import {
 import FacebookLogo from "../../assets/facebook.png";
 import InstagramLogo from "../../assets/instagram.png";
 import GithubLogo from "../../assets/github.png";
-import Galerri2 from "../../assets/gallery_2.png";
+import Gallerry1 from "../../assets/gallery_1.png";
+import Gallerry2 from "../../assets/gallery_2.png";
+import Gallerry3 from "../../assets/gallery_3.png";
+import Gallerry4 from "../../assets/gallery_4.png";
+import Gallerry5 from "../../assets/gallery_5.png";
+import Gallerry6 from "../../assets/gallery_8.png";
+
 import { BsTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
@@ -73,18 +79,23 @@ export default function Footer() {
       </Links>
 
       <Instagram>
-        <h3>Instagram</h3>
-        <div className="grid-container">
-          <Image src={Galerri2} alt="" />
-          <Image src={Galerri2} alt="" />
-          <Image src={Galerri2} alt="" />
-          <Image src={Galerri2} alt="" />
-          <Image src={Galerri2} alt="" />
-          <Image src={Galerri2} alt="" />
-          <Image src={Galerri2} alt="" />
-          <Image src={Galerri2} alt="" />
-          <Image src={Galerri2} alt="" />
-        </div>
+        <Link
+          href="https://www.instagram.com/valmiralmeidadev/"
+          target="_blank"
+        >
+          <h3>Instagram</h3>
+          <div className="grid-container">
+            <Image src={Gallerry1} alt="" />
+            <Image src={Gallerry2} alt="" />
+            <Image src={Gallerry3} alt="" />
+            <Image src={Gallerry4} alt="" />
+            <Image src={Gallerry5} alt="" />
+            <Image src={Gallerry6} alt="" />
+            <Image src={Gallerry2} alt="" />
+            <Image src={Gallerry3} alt="" />
+            <Image src={Gallerry5} alt="" />
+          </div>
+        </Link>
       </Instagram>
 
       <Contact>
